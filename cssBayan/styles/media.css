@@ -1,0 +1,22 @@
+@media screen and (hover: hover) {
+  .row__icon {
+    opacity: 0;
+  }
+  .accordion:hover .row__icon {
+    opacity: 1;
+  }
+  .section:hover .row__icon {
+    transform: rotate(45deg);
+  }
+
+  .section:hover .section__image {
+    width: 70%;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .section:hover .section__image,
+  .section:hover .row__icon {
+    transition: all .7s ease-out;
+  }
+}

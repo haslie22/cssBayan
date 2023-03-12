@@ -1,1 +1,114 @@
-/* styles to be here soon! *?
+@import url(./variables.css);
+
+html{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--main-bg-color);
+}
+
+.app-wrapper {
+  width: 50%;
+  max-width: 70vw;
+  padding-top: 2em;
+}
+
+.header {
+  padding: .5em 0;
+  border-bottom: 0.1em solid var(--transparent-dark-color);
+  margin-bottom: 2em;
+}
+
+.header,
+.main {
+  margin-bottom: 2em;
+}
+
+.header,
+.section {
+  border-bottom: 0.1em solid var(--transparent-dark-color);
+}
+
+.section:last-of-type {
+  border-bottom: none;
+}
+
+.header__title {
+  margin-bottom: .5em;
+}
+
+.header__title,
+.section {
+  transition: all .5s ease-in;
+}
+
+.accordion {
+  background-color: var(--transparent-bright-color);
+  border-radius: .5em;
+}
+
+.section {
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row__icon {
+  width: 1.5em;
+  height: 1.5em;
+  background: url(../assets/plus-cross.png) no-repeat center;
+  background-size: cover;
+}
+
+.section__image {
+  width: 0;
+  align-self: center;
+  /* padding: 0.5rem; */
+  opacity: 0;
+  visibility: hidden;
+}
+
+.section:first-of-type .row__icon {
+  transform: rotate(45deg);
+}
+
+.section:first-of-type .section__image {
+  width: 70%;
+  visibility: visible;
+  opacity: 1;
+}
+
+.section__image,
+.row__icon {
+  transition: all .7s ease-out;
+}
