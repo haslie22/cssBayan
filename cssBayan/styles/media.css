@@ -4,7 +4,13 @@
   }
   .accordion:hover .row__icon {
     opacity: 1;
+    filter: none;
   }
+
+  .accordion:hover .row__title {
+    color: initial;
+  }
+
   .section:hover .row__icon {
     transform: rotate(45deg);
   }

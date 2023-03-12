@@ -2,4 +2,9 @@
   --main-bg-color: #EFEACF;
   --transparent-dark-color: rgba(0, 0, 0, 0.5);
   --transparent-bright-color: rgba(255, 255, 255, 0.3);
+  --dark-font-color: #484343;
+  --accent-color: #9D7A51;
+  --accent-color-bright: #D3B21D;
+  --accent-filter: brightness(0) saturate(100%) invert(51%) sepia(13%) saturate(1344%) hue-rotate(352deg) brightness(94%) contrast(84%);
+  --accent-bright-filter: brightness(0) saturate(100%) invert(56%) sepia(73%) saturate(459%) hue-rotate(12deg) brightness(108%) contrast(95%);
 }
