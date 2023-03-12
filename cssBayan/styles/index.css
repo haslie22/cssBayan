@@ -17,6 +17,7 @@ body {
 }
 
 a {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -39,6 +40,16 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: var(--main-bg-color);
+}
+
+.header__title {
+  font-size: 2.5em;
+}
+
+.header__subtitle,
+.row__title,
+.footer {
+  font-size: 1.5em;
 }
 
 .app-wrapper {
@@ -72,9 +83,11 @@ body {
 }
 
 .header__title,
-.section,
-.footer__link {
-  transition: all .5s ease-in;
+.header__subtitle,
+.row__title,
+.footer__text,
+.footer__emoji {
+  user-select: none;
 }
 
 .header__subtitle {
@@ -128,11 +141,14 @@ body {
   opacity: 1;
 }
 
+.header__title,
+.section,
+.footer__link,
 .section:focus .section__image,
 .section:focus .row__icon,
 .section__image,
 .row__icon {
-  transition: all .7s ease-out;
+  transition: all .5s ease-in;
 }
 
 .section:focus .row__title {
