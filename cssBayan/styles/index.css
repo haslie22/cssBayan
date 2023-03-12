@@ -25,12 +25,6 @@ a:visited {
   color: inherit;
 }
 
-input {
-  width: 0;
-  height: 0;
-  border: none;
-}
-
 :focus {
   outline: none;
 }
@@ -184,4 +178,8 @@ body {
 .section:focus:active .row__icon {
   filter: var(--accent-bright-filter);
   transition: none;
+}
+
+.section:focus:active img {
+  opacity: .5;
 }
